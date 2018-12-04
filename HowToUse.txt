@@ -1,0 +1,16 @@
+FxCop:
+To run the rules on command prompt, copy the compiled dll file into the Rules folder under FxCop installation folder.
+Open the command prompt under the FxCop folder.
+Run the following command:
+FxCopCmd.exe /file:"Path of the dll which has to be checked" /rule:"Path of the folder which contains the rules dlls" /out:"Path of the xml file which will contain the output" 
+
+Example: FxCopCmd.exe /file:"C:\Users\MadhuraPM\Desktop\Test1\Test1\bin\Debug\Test1.dll" /rule:"C:\Program Files (x86)\Microsoft Fxcop 10.0\Rules" /out:"C:\Users\MadhuraPM\Desktop\report.xml"
+
+
+Cat.Net:
+Replace the Config and Rules folder in the Cat.Net installation folder with the updated Config and Rules folder(Attached folder).
+Open the command prompt under the Cat.Net folder.
+Run the following command:
+CATNetCmd.exe /file:"Path of the dll which has to be checked" /configdir:"Path of the directory which contains the source code" /report:"Path of the xml file which will contain the output" /reportxsloutput:"Path of the html file which will contain the output"
+
+Example:CATNetCmd.exe /file:"C:\Users\MadhuraPM\Desktop\Test1\Test1\bin\Debug\Test1.dll" /configdir:"C:\Users\MadhuraPM\Desktop\Test1\Test1" /report:"C:\Users\MadhuraPM\Desktop\reportCatNet.xml" /reportxsloutput:"C:\Users\MadhuraPM\Desktop\reportCatNet.html"
